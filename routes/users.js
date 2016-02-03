@@ -111,4 +111,10 @@ passport.deserializeUser(function(id, done) {
     res.redirect('/');
 });
 
+ router.get('/logout', function(req, res){
+   req.logout;
+   req.flash('success', 'logout success');
+   res.redirect('/users/login');
+ });
+
 module.exports = router;
