@@ -111,8 +111,9 @@ passport.deserializeUser(function(id, done) {
     res.redirect('/');
 });
 
+// logout User
  router.get('/logout', function(req, res){
-   req.logout;
+   req.logout();
    req.flash('success', 'logout success');
    res.redirect('/users/login');
  });
