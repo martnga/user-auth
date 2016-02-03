@@ -18,7 +18,7 @@
 9 verbose stack     at maybeClose (internal/child_process.js:818:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 10 verbose pkgid user_auth@0.0.0
-11 verbose cwd /home/mansa/Desktop/misc/node_projects/user_auth
+11 verbose cwd /home/mansa/Desktop/misc/js/node_projects/user_auth
 12 error Linux 3.19.0-43-generic
 13 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
 14 error node v4.2.4
