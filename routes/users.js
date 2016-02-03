@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+var User = require('../models/User');
+
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
@@ -52,14 +54,13 @@ router.post('/register', function(req, res, next) {
             email: email,
             username: username,
             password: password,
-            profileImage: profileImageName
         });
 
-           /* // Create User
+            // Create User
             User.createUser(newUser, function(err, user){
                 if(err)throw err;
                 console.log(user);
-            });*/
+            });
 
             //Success Message
             req.flash('success', 'You are noew registered and may log in');
